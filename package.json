@@ -1,0 +1,16 @@
+{
+  "name": "sum",
+  "version": "1.0.0",
+  "description": "sum of 2 numbers",
+  "main": "sum.js",
+  "scripts": {
+    "test": "mocha tests/sum.js"
+  },
+  "devDependencies": {
+    "mocha": "5.2.0",
+    "chai": "4.1.2",
+    "chai-as-promised": "^7.1.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
