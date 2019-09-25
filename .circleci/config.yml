@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  xyz:
     docker:
       - image: circleci/node:8.9.4
 
@@ -15,6 +15,22 @@ jobs:
       - run: npm install
       - run: npm test
 
+  abc:
+    docker:
+      - image: circleci/node:8.9.4
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run: echo "Pumpwell to be renamed Trumpwell" # run the `echo` command
+
+workflows:
+  version: 2
+  build-say-hi:
+    jobs:
+      - xyz
+      - abc
 
 
 
