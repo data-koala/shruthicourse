@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  xyz:
     docker:
       - image: circleci/node:8.9.4
 
